@@ -197,6 +197,7 @@ INSTALLED_APPS = [
     "taiga.hooks.github",
     "taiga.hooks.gitlab",
     "taiga.hooks.bitbucket",
+    "taiga.webhooks",
 
     "rest_framework",
     "djmail",
@@ -369,3 +370,5 @@ if "test" in sys.argv:
     print ("\033[1;91mNo django tests.\033[0m")
     print ("Try: \033[1;33mpy.test\033[0m")
     sys.exit(0)
+
+WEBHOOKS_ENABLED = False
